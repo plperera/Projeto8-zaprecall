@@ -19,6 +19,8 @@ export default function Pergunta (props) {
                 listaPerguntas={props.listaPerguntas} 
                 estilo={props.estilo}
                 setEstilo={props.setEstilo}
+                pontos={props.pontos}
+                setPontos={props.setPontos}
             />
            
         ):(

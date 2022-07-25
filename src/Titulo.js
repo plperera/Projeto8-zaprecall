@@ -22,6 +22,9 @@ export default function Titulo (props) {
             
             icon = "help-circle"
             break;
+
+        default:
+            break;
     
     }
 

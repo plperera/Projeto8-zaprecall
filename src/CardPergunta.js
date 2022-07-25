@@ -21,6 +21,8 @@ export default function CardPergunta (props) {
                 listaPerguntas={props.listaPerguntas} 
                 estilo={estilo}
                 setEstilo={setEstilo}
+                pontos={props.pontos}
+                setPontos={props.setPontos}
             />
             </>
             ):(
