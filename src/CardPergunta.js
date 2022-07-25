@@ -6,6 +6,7 @@ import Titulo from "./Titulo"
 export default function CardPergunta (props) {
 
     const [clicado, setClicado] = React.useState(false)
+    const [estilo, setEstilo] = React.useState("ask")
     
     return (
 
@@ -18,6 +19,8 @@ export default function CardPergunta (props) {
                 Pergunta={props.Pergunta}
                 indice={props.indice} 
                 listaPerguntas={props.listaPerguntas} 
+                estilo={estilo}
+                setEstilo={setEstilo}
             />
             </>
             ):(
@@ -28,6 +31,8 @@ export default function CardPergunta (props) {
                 Pergunta={props.Pergunta}
                 indice={props.indice} 
                 listaPerguntas={props.listaPerguntas} 
+                estilo={estilo}
+                setEstilo={setEstilo}
             />
             </>
             )

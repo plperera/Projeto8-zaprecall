@@ -93,3 +93,15 @@ body {
     background-color: rgb(89, 255, 47);
 
 }
+.vermelho span, .vermelho ion-icon{
+    color: #D70900;
+    text-decoration: line-through;
+}
+.amarelo span, .amarelo ion-icon{
+    color: rgb(255, 174, 0);
+    text-decoration: line-through;
+}
+.verde span, .verde ion-icon{
+    color: rgb(89, 255, 47);
+    text-decoration: line-through;
+}

@@ -4,35 +4,44 @@ export default function Resposta (props) {
 
     const [pontos, setPontos] = React.useState(0)
 
-    return (
-        
+    return (        
     <> 
-
         <div className="ask">
         
-        <div>
+            <div>
 
-            <span>{props.listaPerguntas.Resposta[props.indice]}</span>
-            <ion-icon name="swap"></ion-icon>
-            
-        </div>
-        
-        
-        <div className="containerPontos">
-
-            <div className="naoLembrei" onClick={() => props.setClicado(!props.clicado)}>
+                <span>{props.listaPerguntas.Resposta[props.indice]}</span>
+                <ion-icon name="swap"></ion-icon>
+                
             </div>
+              
+            <div className="containerPontos">
 
-            <div className="quaseLebrei" onClick={() => props.setClicado(!props.clicado)}>
+                <div className="naoLembrei" onClick={() => {
+
+                    props.setClicado(!props.clicado)
+                    props.setEstilo("ask vermelho")
+
+                }}>
+                </div>
+
+                <div className="quaseLebrei" onClick={() => {
+
+                    props.setClicado(!props.clicado)
+                    props.setEstilo("ask amarelo")
+
+                }}>
+                </div>
+
+                <div className="Lembrei" onClick={() => {
+
+                    props.setClicado(!props.clicado)
+                    props.setEstilo("ask verde")
+
+                }}>
+                </div>
+
             </div>
-
-            <div className="Lembrei" onClick={() => props.setClicado(!props.clicado)}>
-            </div>
-            
-      
-
-        </div>
-
         </div>
     </>    
     )
