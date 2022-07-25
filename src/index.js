@@ -37,7 +37,7 @@ function App () {
         <>  
         {telaAtual ? 
         (
-            <div className="content">
+            <div className="content tela01">
                 <Tela01 />
                 <div className="button" onClick={() => setTelaAtual(!telaAtual)}>Iniciar Recall!</div>
             </div>     

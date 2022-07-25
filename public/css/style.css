@@ -5,6 +5,9 @@
 body {
     background-color: #FB6B6B;
 }
+.tela01{
+    padding-top: 200px;
+}
 .content{
     
     display: flex;
@@ -16,6 +19,11 @@ body {
     height: 100%;
 
     margin-bottom: 171px;
+    
+}
+.content img{
+    width: 136px;
+    height: 161px;
 }
 .button {
 
