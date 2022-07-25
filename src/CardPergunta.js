@@ -1,27 +1,38 @@
 import React from "react"
-export default function Pergunta (props) {
+
+import Pergunta from "./Pergunta"
+import Titulo from "./Titulo"
+
+export default function CardPergunta (props) {
 
     const [clicado, setClicado] = React.useState(false)
-
-
-
+    
     return (
 
-        <div className="ask" onClick={() => setClicado(!clicado)}>
-
+        <>
             {clicado ? (
             <>
-            <span>{props.Pergunta}</span>
-            <ion-icon name="swap"></ion-icon>
-            </>)
-            :(
+            <Pergunta 
+                clicado= {clicado}
+                setClicado={setClicado}
+                Pergunta={props.Pergunta}
+                indice={props.indice} 
+                listaPerguntas={props.listaPerguntas} 
+            />
+            </>
+            ):(
             <>
-            <Pergunta indice={props.indice}/>
-            </>)
-
-            } 
-            
-        </div>
+            <Titulo 
+                clicado= {clicado}
+                setClicado={setClicado}
+                Pergunta={props.Pergunta}
+                indice={props.indice} 
+                listaPerguntas={props.listaPerguntas} 
+            />
+            </>
+            )
+            }            
+        </>
 
     )
 }

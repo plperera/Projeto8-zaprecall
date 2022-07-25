@@ -14,10 +14,12 @@ export default function Tela02 (props) {
         {props.listaPerguntas.Pergunta.map( (lista, indice) => 
 
         
-        <CardPergunta Pergunta={lista} listaPerguntas={props.listaPerguntas} indice={indice}/>
-
-        
-
+        <CardPergunta 
+            Pergunta={lista} 
+            listaPerguntas={props.listaPerguntas} 
+            indice={indice}
+            key={indice}
+        />
         )}
         
         </>
