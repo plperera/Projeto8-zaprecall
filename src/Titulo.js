@@ -3,22 +3,22 @@ export default function Titulo (props) {
     let icon
 
     switch (props.estilo) {
-        case "ask":
+        case "quest":
 
             icon = "swap"
             break;
     
-        case "ask vermelho":
+        case "quest vermelho":
             
             icon = "close-circle"
             break;
     
-        case "ask verde":
+        case "quest verde":
             
             icon = "checkmark-circle"
             break;
 
-        case "ask amarelo":
+        case "quest amarelo":
             
             icon = "help-circle"
             break;
@@ -29,9 +29,12 @@ export default function Titulo (props) {
     }
 
     return (
-        <div className={props.estilo} onClick={() => props.estilo === "ask" ? props.setClicado(!props.clicado):""}>
+        <div className={props.estilo} onClick={() => props.estilo === "quest" ? props.setClicado(!props.clicado):""}>
+           
             <span>Pergunta {props.indice + 1}</span>
+            
             <ion-icon name={icon}></ion-icon>
+            
         </div>
     )
 }

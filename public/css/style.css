@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Recursive', sans-serif !important;
+}
 body {
     background-color: #FB6B6B;
 }
@@ -10,6 +14,8 @@ body {
 
     width: 100%;
     height: 100%;
+
+    margin-bottom: 171px;
 }
 .button {
 
@@ -34,36 +40,74 @@ body {
     color: white;
     margin: 13px 0 30px 0;
 }
-.ask{
+.menu{ 
+    width: 255px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.menu img{ 
+    width: 52px;
+    height: 60px;
+    margin-right: 20px;
+}
+.quest{
+
     width: 300px;
     height: 65px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-direction: row;
 
     margin-bottom: 25px;
     background-color: white;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-
     flex-wrap: wrap;
+
+}
+.quest ion-icon{ 
+    color: #333333;
+    font-size: 21px;
+    margin-right: 15px;
+}
+.quest span{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
     
+}
+.ask{
+    width: 300px;
+    height: 65px;
+
+    display: flex;
+    margin-bottom: 25px;
+    background-color: white;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    position: relative;
+    flex-wrap: wrap;
+       
 }
 .ask ion-icon {
     color: #333333;
     font-size: 21px;
-
-    margin-right: 15px;
+    
+    position: absolute;
+    right: 3vw;
+    bottom: 2vw;
 }
 .ask span {
-    font-family: 'Recursive';
+    width: 280px;
 
     color: #333333;
     font-size: 16px;
     font-weight: 700;
-
+    margin-top: 15px;
     margin-left: 15px;
 }
 
@@ -77,7 +121,7 @@ body {
     
 }
 .naoLembrei, .quaseLebrei, .Lembrei {
-    
+
     width: 87px;
     height: 100%;
     border-radius: 5px;
@@ -88,7 +132,7 @@ body {
     justify-content: center;
     text-align: center;
 
-    font-size: 14px;
+    font-size: 12px;
     
 }
 .naoLembrei{
@@ -126,7 +170,56 @@ body {
     position: fixed;
     bottom: 0;
 }
-.close-circle ion-icon{  
+.containerResultado h3{
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+}
+.containerResultado span{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 8px;
+
+}
+.containerResultado .close-circle{  
 
     color: #D70900;
+    font-size: 23px;
+    flex-direction: row;
+}
+.containerResultado .help-circle{  
+
+    color: #FF922E;
+    font-size: 23px;
+}
+.containerResultado .checkmark-circle{
+
+    color: #2FBE34;
+    font-size: 23px;
+}
+.tapped {
+
+    height: 131px;
+    background-color: #FFFFD5;
+    font-size: 18px;
+    
+}
+.tapped span{
+    margin-top: 15px;
+    font-weight: 400;
+}
+.finalização{
+    height: 171px;
+    justify-content: flex-start;
+}
+.finalização h3{
+    margin: 25px 0 16px 0;
+}
+.finalização span{
+    margin-bottom: 8px;
+}
+.container-icon{
+    display: flex;
 }

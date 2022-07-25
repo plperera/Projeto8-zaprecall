@@ -25,7 +25,7 @@ export default function Pergunta (props) {
            
         ):(
            
-            <div className="ask" onClick={() => setResposta(!resposta)}>
+            <div className="ask tapped" onClick={() => setResposta(!resposta)}>
             <span>{props.Pergunta}</span>
             <ion-icon name="swap"></ion-icon>
             </div>

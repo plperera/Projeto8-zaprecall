@@ -6,7 +6,7 @@ import Titulo from "./Titulo"
 export default function CardPergunta (props) {
 
     const [clicado, setClicado] = React.useState(false)
-    const [estilo, setEstilo] = React.useState("ask")
+    const [estilo, setEstilo] = React.useState("quest")
     
     return (
 

@@ -6,21 +6,20 @@ export default function Resposta (props) {
 
     return (        
     <> 
-        <div className="ask">
+        <div className="ask tapped">
         
-            <div>
+            <>
 
                 <span>{props.listaPerguntas.Resposta[props.indice]}</span>
-                <ion-icon name="swap"></ion-icon>
                 
-            </div>
+            </>
               
             <div className="containerPontos">
 
                 <div className="naoLembrei" onClick={() => {
 
                     props.setClicado(!props.clicado)
-                    props.setEstilo("ask vermelho")
+                    props.setEstilo("quest vermelho")
                     props.setPontos(["close-circle", ...props.pontos])
 
                 }}>
@@ -30,7 +29,7 @@ export default function Resposta (props) {
                 <div className="quaseLebrei" onClick={() => {
 
                     props.setClicado(!props.clicado)
-                    props.setEstilo("ask amarelo")
+                    props.setEstilo("quest amarelo")
                     props.setPontos(["help-circle", ...props.pontos])
 
                 }}>
@@ -40,7 +39,7 @@ export default function Resposta (props) {
                 <div className="Lembrei" onClick={() => {
 
                     props.setClicado(!props.clicado)
-                    props.setEstilo("ask verde")
+                    props.setEstilo("quest verde")
                     props.setPontos(["checkmark-circle", ...props.pontos])
 
                 }}>

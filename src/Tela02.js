@@ -1,5 +1,6 @@
 import CardPergunta from "./CardPergunta"
 import Resultado from "./Resultado"
+import logo from "./img/logo.png"
 
 import React from "react"
 export default function Tela02 (props) {
@@ -11,8 +12,10 @@ export default function Tela02 (props) {
 
         <>
             {/* <img src="./assets/img/logo.png" alt=""></img> */}
-
+            <div className="menu">
+            <img src={logo} alt=""></img>
             <span className="tittle">ZapRecall</span>
+            </div>
 
             {props.listaPerguntas.Pergunta.map( (lista, indice) => 
 
