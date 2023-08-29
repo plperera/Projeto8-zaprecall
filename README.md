@@ -1,4 +1,4 @@
-# we-pass-front
+# zap-recall
 
 Zap-Recall é uma aplicação Front-End para estudos em React
 :D
